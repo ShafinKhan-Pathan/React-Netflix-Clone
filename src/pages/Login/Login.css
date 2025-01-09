@@ -1,0 +1,128 @@
+/* Background Image */
+.bgimage {
+  background-image: url("../../assets/login_backgroundImage.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%; /* Ensure it expands with content */
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: opacity(0.5);
+  z-index: -1;
+}
+
+
+/* Login Logo */
+.login img {
+  width: 15%;
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer;
+  padding: 48px;
+  margin-left: 10%;
+}
+
+/* Login Box */
+.login_box {
+  position: relative;
+  width: 35%;
+  min-height: 75vh; /* Allow the height to grow if content overflows */
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  padding: 32px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Login Form */
+.login_form {
+  padding: 32px;
+}
+
+.login_form h1 {
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.login_form h3 {
+  text-align: center;
+  color: gray;
+  margin: 16px 0;
+}
+
+.login__form--fields {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input Fields */
+.input_design {
+  outline: none;
+  border: 0.5px solid gray;
+  padding: 12px;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  margin-top: 16px;
+  border-radius: 4px;
+}
+
+.input_design:last-child {
+  margin-bottom: 16px;
+}
+
+/* Buttons */
+.form_btn,
+.form_btn-light {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.form_btn {
+  background-color: red;
+  color: white;
+}
+
+.form_btn-light {
+  background-color: rgba(109, 109, 109, 0.7);
+  color: white;
+}
+
+.form_btn:hover,
+.form_btn-light:hover {
+  opacity: 0.8;
+}
+
+/* Sign Up Link */
+.form_p {
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 24px;
+}
+
+.form_p a {
+  text-decoration: none;
+}
+
+.span__modifier {
+  color: red;
+  margin: 4px;
+}
+
+/* Notice Text */
+.para_notice {
+  font-size: 14px;
+  color: gray;
+  margin-top: 24px;
+  text-align: center;
+}
