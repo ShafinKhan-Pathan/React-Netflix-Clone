@@ -7,6 +7,7 @@ import profileImage from '../../assets/profile_img.png'
 import dropdownIcon from '../../assets/caret_icon.svg'
 const Navbar = () => {
   return (
+    
     <div className='navbar'>
       <div className="navbar_left">
         <img src={logo} alt="Logo" />
@@ -32,6 +33,7 @@ const Navbar = () => {
         </div>
       </div>
        </div>
+       
   )
 }
 

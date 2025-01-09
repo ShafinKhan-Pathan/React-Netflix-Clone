@@ -1,10 +1,6 @@
 .navbar {
   width: 100%;
-  max-width: 1200px;
-  top: 0; /* Or wherever you want it fixed */
-  left: 50%; /* Move the element to the center of the viewport */
-  transform: translateX(-50%); /* Adjust it back by half its width */
-  padding: 16px 24px;
+  padding: 16px 6%;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -22,53 +18,57 @@
   align-items: center;
   gap: 50px;
 }
-.navbar_left li,
+.navbar_left img {
+  width: 90px;
+  cursor: pointer;
+}
+.navbar_left
 ul {
-  list-style-type: none;
+  list-style: none;
   display: flex;
   gap: 20px;
 }
-.navbar_left img {
-  height: 40%;
+.navbar_left
+li {
   cursor: pointer;
 }
+
 .navbar_right {
   display: flex;
   align-items: center;
   gap: 20px;
-  
 }
 .navbar_right .icons {
   width: 20px;
   cursor: pointer;
 }
-.navbar_right .profile{
-    border-radius: 4px;
-    width: 35px;
+.navbar_right .profile {
+  border-radius: 4px;
+  width: 35px;
 }
-.navbar_profile{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    position: relative;
+.navbar_profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
 }
-.navbar .dropdown{
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: max-content;
-    background: #191919;
-    padding: 18px 24px;
-    text-decoration: underline;
-    z-index: 1;
-    border-radius: 2px;
-    display: none;
+.navbar .dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: max-content;
+  background: #191919;
+  padding: 18px 24px;
+  text-decoration: underline;
+  z-index: 1;
+  border-radius: 2px;
+  display: none;
 }
-.navbar .dropdown{
-    font-size: 12px;
-    cursor: pointer;
+.navbar .dropdown {
+  font-size: 12px;
+  cursor: pointer;
 }
-.navbar_profile:hover .dropdown{
-    display: block;
+.navbar_profile:hover .dropdown {
+  display: block;
 }
