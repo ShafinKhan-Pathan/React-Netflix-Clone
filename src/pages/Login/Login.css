@@ -12,7 +12,6 @@
   z-index: -1;
 }
 
-
 /* Login Logo */
 .login img {
   width: 15%;
@@ -55,6 +54,8 @@
 .login__form--fields {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  position: relative;
 }
 
 /* Input Fields */
@@ -67,12 +68,36 @@
   font-size: 14px;
   margin-top: 16px;
   border-radius: 4px;
+  width: 100%;
 }
-
+.input_design::placeholder {
+  font-weight: 600;
+}
 .input_design:last-child {
   margin-bottom: 16px;
 }
+.password_container {
+  position: relative;
+  width: 100%; /* Match the width of the input field */
+}
+.toggle_password {
+  position: absolute;
+  top: 56%; /* Center the button vertically */
+  right: 10px; /* Adjust spacing from the right edge */
+  transform: translateY(-50%); /* Ensure proper centering */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px; /* Adjust icon size */
+  color: gray; /* Match with the form’s design */
+}
 
+.remember {
+  text-align: left;
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
 /* Buttons */
 .form_btn,
 .form_btn-light {
@@ -86,7 +111,6 @@
   margin-bottom: 8px;
   cursor: pointer;
 }
-
 .form_btn {
   background-color: red;
   color: white;
@@ -117,6 +141,7 @@
 .span__modifier {
   color: red;
   margin: 4px;
+  cursor: pointer;
 }
 
 /* Notice Text */
