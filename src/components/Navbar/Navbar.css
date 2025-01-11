@@ -72,3 +72,6 @@ li {
 .navbar_profile:hover .dropdown {
   display: block;
 }
+.navbar_dark{
+  background: #191919;
+}
