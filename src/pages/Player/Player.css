@@ -16,8 +16,20 @@
     border-radius: 10px;
 }
 .player_info{
+    margin-top: 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 85%;
+    width: 80%;
+}
+.span_modifier{
+    color: red;
+}
+@media (max-width:1300px) {
+    .player_info{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
 }

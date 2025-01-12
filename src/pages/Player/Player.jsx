@@ -33,15 +33,15 @@ const Player = () => {
       <iframe
         src={`https://www.youtube.com/embed/${apiData.key}`}
         frameBorder="0"
-        height="90%"
-        width="90%"
+        height="80%"
+        width="80%"
         title="Trailer"
         allowFullScreen
       ></iframe>
       <div className="player_info">
-        <p>{apiData.published_at.slice(0,10)}</p>
-        <p>{apiData.name}</p>
-        <p>{apiData.type}</p>
+        <p><span className="span_modifier">Published Date - </span>{apiData.published_at.slice(0,10)}</p>
+        <p><span className="span_modifier">Description / Title - </span>{apiData.name}</p>
+        <p><span className="span_modifier">Type - </span>{apiData.type}</p>
       </div>
     </div>
   );

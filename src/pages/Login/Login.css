@@ -1,3 +1,4 @@
+
 /* Background Image */
 .bgimage {
   background-image: url("../../assets/login_backgroundImage.jpg");
@@ -14,18 +15,20 @@
 
 /* Login Logo */
 .login img {
-  width: 15%;
-  height: auto; /* Maintain aspect ratio */
+  width: 200px;
+  margin: 32px 48px;
   cursor: no-drop;
-  padding: 48px;
-  margin-left: 10%;
 }
 
 /* Login Box */
 .login_box {
-  position: relative;
-  width: 35%;
-  min-height: 75vh; /* Allow the height to grow if content overflows */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  max-width: 600px;
+  min-height: 50%; /* Allow the height to grow if content overflows */
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   padding: 32px;
@@ -160,4 +163,28 @@
 }
 .loading_spinner img{
   width: 60px;
+}
+/* Responsive design */
+
+@media (max-width:1070px){
+  .login img {
+    width: 150px;
+    margin: 32px 48px;
+  }
+  .login_box {
+   margin-top: 64px;
+  }
+}
+
+@media (max-width:650px){
+  .login_box{
+    width: 90%;
+    padding: 16px;
+  }
+  .login img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 135px;
+  }
 }

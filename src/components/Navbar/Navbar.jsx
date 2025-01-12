@@ -39,9 +39,10 @@ const Navbar = () => {
           <img src={profileImage} alt="" className="profile" />
           <img src={dropdownIcon} alt="" />
           <div className="dropdown">
-            <p onClick={() => {
-              logout()
-            }}
+            <p
+              onClick={() => {
+                logout();
+              }}
             >
               Sign Out
             </p>

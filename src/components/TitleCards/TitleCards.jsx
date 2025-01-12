@@ -36,6 +36,7 @@ const TitleCards = ({ title, category }) => {
     cardRef.current.addEventListener("wheel", handleWheel);
   }, []);
   return (
+    <div id="title">
     <div className="title_cards">
       <h1>{title ? title : "Popular on Netflix"}</h1>
       <div className="card_list" ref={cardRef}>
@@ -51,6 +52,7 @@ const TitleCards = ({ title, category }) => {
           );
         })}
       </div>
+    </div>
     </div>
   );
 };

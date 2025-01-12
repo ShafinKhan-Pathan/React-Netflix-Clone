@@ -75,3 +75,34 @@ li {
 .navbar_dark{
   background: #191919;
 }
+/* Responsive Design */
+@media (max-width:1150px){
+  .navbar{
+    padding: 8px 4%;
+  }
+  .navbar_left ul{
+    gap: 8px;
+  }
+  .navbar_left ul li:last-child{
+   display: none;
+  }
+  .navbar_right{
+    gap: 12px;
+  }
+  .navbar img{
+    height: 25px;
+  }
+}
+@media (max-width:815px){
+  .navbar_left ul{
+    display: none;
+  }
+}
+@media (max-width:500px){
+  .navbar_right{
+    gap: 8px;
+  }
+  .navbar img{
+    height: 20px;
+  }
+}
